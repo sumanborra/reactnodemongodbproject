@@ -19,7 +19,7 @@ const Contacts = (props) =>{
                     authorization: `Bearer ${jwtToken}`
                 },
             }
-            const response = await fetch(`http://localhost:3000/all-users/${userName}`,options)
+            const response = await fetch(`https://reactnodemongodbproject.onrender.com/all-users/${userName}`,options)
             const responseData = await response.json()
             if(response.status === 200){
                 setAllUserData(responseData.result);

@@ -43,7 +43,7 @@ useEffect(() =>{
             },
         }
 
-        const imageData = await fetch(`http://localhost:3000/get-profile-image/${userName}`,options)
+        const imageData = await fetch(`https://reactnodemongodbproject.onrender.com/get-profile-image/${userName}`,options)
         const imageFromDb = await imageData.json()
         if(imageData.status === 200){
             setImage(imageFromDb.image)
@@ -66,7 +66,7 @@ useEffect(() =>{
                 authorization: `Bearer ${jwtToken}`
             },
         }
-        const userData = await fetch(`http://localhost:3000/${userName}`,options)
+        const userData = await fetch(`https://reactnodemongodbproject.onrender.com/${userName}`,options)
         const userDetails = await userData.json()
         
         if(userData.status === 200){
@@ -92,7 +92,7 @@ useEffect(() =>{
                 authorization: `Bearer ${jwtToken}`
             },
         }
-        const userData = await fetch(`http://localhost:3000/${userName}`,options)
+        const userData = await fetch(`https://reactnodemongodbproject.onrender.com/${userName}`,options)
         const userDetails = await userData.json()
         
         if(userData.status === 200){
@@ -125,7 +125,7 @@ const updateImageOnDB = async (base64Image) =>{
         body:JSON.stringify(profileImageUpload)
     }
     try{
-        await fetch("http://localhost:3000/upload",options)
+        await fetch("https://reactnodemongodbproject.onrender.com/upload",options)
         setImageUpdate(base64Image);
         
     }

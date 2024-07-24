@@ -49,7 +49,7 @@ const Register = () =>{
         },
         body:JSON.stringify(userData)
       }
-       const response = await fetch("http://localhost:3000/register", options);
+       const response = await fetch("https://reactnodemongodbproject.onrender.com/register", options);
        const responseStatus = await response.json(); 
        if(response.status !== 200){
           setErrorMessage(responseStatus.errorMsg)

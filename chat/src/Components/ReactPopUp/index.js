@@ -30,7 +30,7 @@ const ReactPopUp = (props) => {
           authorization:`Bearer ${jwtToken}`
         }
       }
-      const response = await fetch(`http://localhost:3000/delete-account/${userName}`, options)
+      const response = await fetch(`https://reactnodemongodbproject.onrender.com/delete-account/${userName}`, options)
       if(response.status === 200){
         navigate("/login")
         Cookies.remove("jwtToken")
@@ -59,7 +59,7 @@ const ReactPopUp = (props) => {
             },
             body:JSON.stringify(userEditData)
           }
-          await fetch(`http://localhost:3000/edit-settings/${userName}`,options)
+          await fetch(`https://reactnodemongodbproject.onrender.com/edit-settings/${userName}`,options)
           changeUpdateForm();
       }
 
