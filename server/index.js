@@ -202,7 +202,7 @@ app.post("/edit-settings/:userName", authenticateToken, async (request, response
             
             const result = await collection.updateOne({userName},{$set:{name,about}});
             response.status(200)
-            response.send({ yourId: result.insertedId, message: "Uploaded Image successfuly" });
+            response.send({ yourId: result.insertedId, message: "Updated Data successfuly" });
         } else {
             response.status(401);
             response.send({ errorMsg: 'User with this Email ID Does not exist' })
@@ -229,7 +229,7 @@ app.post("/delete-account/:userName", authenticateToken, async (request, respons
             
             const result = await collection.deleteOne({userName});
             response.status(200)
-            response.send({ yourId: result.insertedId, message: "Uploaded Image successfuly" });
+            response.send({ yourId: result.insertedId, message: "Deleted Account successfuly" });
         } else {
             response.status(401);
             response.send({ errorMsg: 'User with this Email ID Does not exist' })
