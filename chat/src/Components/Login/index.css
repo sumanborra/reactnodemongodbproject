@@ -1,0 +1,70 @@
+
+.register-form-main-container{
+    height: 100vh;
+    padding: 40px;
+   
+    display: flex;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/dq6jxocbv/image/upload/v1721037303/Gemini_Generated_Image_ppggxeppggxeppgg_cq5s2q.jpg");
+    block-size: cover;
+    
+}
+.register-image{
+    height: 500px;
+    width: 600px;
+    margin-right: 250px;
+   
+
+}
+.form-container{
+    background-image: linear-gradient(to top, #abedbc,#abede1,#abd9ed,#c4abed);
+    width: 15%;
+    padding: 10px;
+    border-radius: 14px;
+    
+}
+
+.label-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.838);
+}
+.input-element{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.838);
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #f0edf5;
+}
+.button-custom{
+    background-color: #c4abed;
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login-form-para-text{
+    font-family: "Roboto";
+    font-size: 18px;
+
+}
+.login-form-span-text{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(55, 55, 233);
+}
+.required-inputs{
+    color: red;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 0;
+}
+.error-message{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: rgb(245, 16, 16);
+    
+}

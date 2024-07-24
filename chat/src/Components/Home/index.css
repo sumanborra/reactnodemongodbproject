@@ -1,0 +1,133 @@
+.home-main-container{
+    padding: 20px;
+    
+    background-color: rgb(226, 237, 247);
+    display: flex;
+}
+.left-side-section-container{
+    width: 4%;
+    padding: 10px;
+    padding-left: 5px;
+    background-color: rgb(247, 206, 153);
+    border-radius: 14px;
+    height: 90vh;
+    
+    
+}
+.left-side-section-container:hover{
+    width: 25%;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(40, 134, 242);
+    border-radius: 16px;
+   padding: 0px;
+   line-height: 0.1;
+
+}
+.profile-container:hover{
+    line-height: 1;
+}
+.profile-name-text{
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.789);
+    
+}
+.profile-about-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    
+    color: rgba(73, 72, 72, 0.915);
+    
+}
+.features-container-left-section{
+    padding-left: 0px;
+    list-style-type: none;
+}
+.settings-text{
+
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px;
+}
+.settings-text:hover{
+    background-color: antiquewhite;
+    border-radius: 12px;
+    width: 70%;
+    cursor: pointer;
+    height: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.settings-text:active{
+    border-left: 5px solid rgb(27, 59, 27);
+    border-radius: 10px;
+}
+.log-out-text{
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 350px;
+    padding-left: 20px;
+    
+}
+.log-out-text:hover{
+    background-color: antiquewhite;
+    border-radius: 12px;
+    width: 60%;
+    cursor: pointer;
+    height: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.custom-log-out-button{
+    border: none;
+    background-color: transparent;
+   
+}
+.middle-section-container{
+    height: 90vh;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(191, 198, 204);
+    border-radius: 14px;
+    margin: 5px;
+
+}
+.right-section-container{
+    height: 90vh;
+    width: 45%;
+    padding: 10px;
+    background-color: rgb(199, 224, 239);
+    border-radius: 14px;
+    margin-left: 5px;
+}
+.profile-image-home{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+.profile-image-home:hover{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+.inpyt-element-image{
+    display: none;
+}
+.fun-chat-view-styles{
+    width: 100%;
+}
